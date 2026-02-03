@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elemental Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Elemental Dictionary ⚛️</h1>
+<p>AI-powered atomic structure explorer</p>
+
+<input id="elementInput" placeholder="Enter element name">
+<button onclick="loadElement()">Explore</button>
+
+<div id="content" class="hidden">
+  <p><b>Atomic Number:</b> <span id="atomic"></span></p>
+  <p><b>Mass Number:</b> <span id="mass"></span></p>
+  <p><b>Period:</b> <span id="period"></span></p>
+  <p><b>Group:</b> <span id="group"></span></p>
+  <p><b>Valency:</b> <span id="valency"></span></p>
+
+  <h3>Electron Configuration</h3>
+  <p id="config"></p>
+
+  <h3>Electron Filling Steps</h3>
+  <div id="stepBox"></div>
+  <button onclick="nextStep()">Next Step</button>
+
+  <h3>Why This Configuration Works</h3>
+  <p><b>Aufbau:</b> <span id="aufbau"></span></p>
+  <p><b>Hund:</b> <span id="hund"></span></p>
+  <p><b>Pauli:</b> <span id="pauli"></span></p>
+
+  <div id="radioactive" class="radioactive hidden">
+    ☢ Radioactive Element — Atomic Instability
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
